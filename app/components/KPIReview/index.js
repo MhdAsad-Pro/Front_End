@@ -30,6 +30,7 @@ function KPIReview() {
         <div className="card-header">
           <h3>{currentKPI}</h3>
         </div>
+        <input type='text'/>
         <div className="card-body">Some text</div>
         <div className="card-footer text-right">
           <button className="btn-dark btn">view detail</button>

@@ -5,7 +5,7 @@ import App from '../../components/Emp-ProgressGrpah'
 export default function DashBoard() {
   return (
     <section>
-       
+    
       <App/>
    
       <KPIReview/>
