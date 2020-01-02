@@ -18,7 +18,7 @@ import BasePage from '../BasePage';
 //import HRdepartDetail from '../DepartDetail';
 //import ManagerDashBoard from '../ManagerDashBoard';
 //import WidgetCell from '../WidgetCell';
-import Message from '../GenerateMsg';
+//import Message from '../GenerateMsg';
 export default function App() {
   return (
     // <DetailPage/>
@@ -31,12 +31,11 @@ export default function App() {
     // <DashBoard/>
     //<HRmainDashBoard/>
     // <WidgetCell />
+    //<Message/>
     <BasePage>
-     
-<Message/>
     </BasePage>
 
 
-    //  <Login/>
+     // <Login/>
   );
 }
