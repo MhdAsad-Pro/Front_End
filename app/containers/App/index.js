@@ -19,6 +19,7 @@ import BasePage from '../BasePage';
 //import ManagerDashBoard from '../ManagerDashBoard';
 //import WidgetCell from '../WidgetCell';
 //import Message from '../GenerateMsg';
+import LineManager from '../LineManager';
 export default function App() {
   return (
     // <DetailPage/>
@@ -33,6 +34,7 @@ export default function App() {
     // <WidgetCell />
     //<Message/>
     <BasePage>
+    <LineManager/>
     </BasePage>
 
 
