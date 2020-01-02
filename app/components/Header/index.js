@@ -14,11 +14,11 @@ function Header() {
             alignRight
             title={<i className="fa fa-user Nav" />}
             id="basic-nav-dropdown" >
-            <NavDropdown.Item href="#action/3.1"> <i className="fa fa-user" />Account</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
+            <NavDropdown.Item href="#"> <i className="fa fa-user" />Account</NavDropdown.Item>
+            <NavDropdown.Item href="#">
             <i className="fas fa-cogs"/> Settings
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4"> <i className="fas fa-sign-out-alt"/>
+            <NavDropdown.Item href="#"> <i className="fas fa-sign-out-alt"/>
               Logout
             </NavDropdown.Item>
           </NavDropdown>
