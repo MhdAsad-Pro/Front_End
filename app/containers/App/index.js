@@ -8,7 +8,7 @@
 
 import React from 'react';
 import BasePage from '../BasePage';
-import DashBoard from '../DashBoard';
+//import DashBoard from '../DashBoard';
 //import AddEmployee from '../AddEmployee';
 //import DetailPage from'../DetailPage';
 //import Login from '../Login';
@@ -16,8 +16,9 @@ import DashBoard from '../DashBoard';
 //import HRmainDashBoard from '../HRmainDashBoard';
 //import HRteamDetail from '../HRteamDetail';
 //import HRdepartDetail from '../DepartDetail';
-//import ManagerDashBoard from '../ManagerDashBoard'
-
+//import ManagerDashBoard from '../ManagerDashBoard';
+//import WidgetCell from '../WidgetCell';
+import Message from '../GenerateMsg';
 export default function App() {
   return (
     // <DetailPage/>
@@ -25,10 +26,14 @@ export default function App() {
     //<HRmainDashBoard/>
     //<HRteamDetail />
     //<HRdashBoard/> 
-   // <HRdepartDetail/>
-   //<ManagerDashBoard/>
+    // <HRdepartDetail/>
+    //<ManagerDashBoard/>
+    // <DashBoard/>
+    //<HRmainDashBoard/>
+    // <WidgetCell />
     <BasePage>
-     <DashBoard/>
+     
+<Message/>
     </BasePage>
 
 

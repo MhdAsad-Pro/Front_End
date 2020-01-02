@@ -1,0 +1,25 @@
+input{
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+   
+}
+
+.card.mb-2 {
+    width: 50%;
+    margin-top: 50px;
+    float: right;
+    margin-left:20px;
+   
+}
+.btn{
+        margin-top: 20px;
+        
+}
+.btn1{
+    margin-right: 5px;
+    float:right;
+}
+button{
+    float: right;
+}
