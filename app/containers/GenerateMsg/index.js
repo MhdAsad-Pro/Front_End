@@ -22,29 +22,20 @@ export default function Message() {
 
               <Form.Control as="textarea" rows="10" />
             </Form.Group>
-
-
-   <Row>
-       <Col md='6'>
-       <Form.Control  type='file'/>
-       </Col>
-       <Col md='6'>
-       
-       <Button variant="primary" type="submit" className="btn">
-              Send Message
+            <Row>
+              <Col md='6'>
+                <Form.Control type='file' />
+              </Col>
+              <Col md='6'>
+                <Button variant="primary" type="submit" className="msg">
+                  Send Message
             </Button>
-            <Button variant="primary" type="submit">
-              Save Draft
+                <Button variant="primary" type="submit">
+                  Save Draft
             </Button>
-       </Col>
-
-           
+              </Col>
 
             </Row>
-
-
-
-
           </Form>
         </Card.Body>
       </Card>

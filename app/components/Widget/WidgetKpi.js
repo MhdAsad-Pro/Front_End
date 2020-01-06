@@ -31,7 +31,20 @@ function WidgetKpi() {
           <h3>{currentKPI}</h3>
         </div>
         <div className="card-body">
-          <input className="form-control mb-2" type="number" placeholder="1" />
+        <div className="form-row p-2">
+          <div className="col-md-4">
+            <div className="form-group">
+              <Form.Label>Rating</Form.Label>
+              <Form.Control as="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Form.Control>
+            </div>
+          </div>
+        </div>
           <textarea className="w-100 form-control" placeholder="Some Text" />
           <div className=" mt-2">
             <button className="btn btn-primary mr-2">Done</button>

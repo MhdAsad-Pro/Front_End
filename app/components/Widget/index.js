@@ -21,7 +21,6 @@ const Widget = () => (
     <OverlayTrigger trigger="click" placement="auto" overlay={popover}>
       <Button variant="success">Hey! Let's Generate Review</Button>
     </OverlayTrigger>
-
 );
 
 export default Widget;

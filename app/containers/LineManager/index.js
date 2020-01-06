@@ -5,7 +5,6 @@ import KPIReview from '../../components/KPIReview';
 export default function LineManager (){
     return(
         <section className='py-5'>
-         
             <KPIReview/>
         </section>
     )
