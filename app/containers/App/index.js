@@ -21,12 +21,16 @@ import ManagerDashBoard from '../ManagerDashBoard';
 import WidgetCell from '../WidgetCell';
 import Message from '../GenerateMsg';
 import LineManager from '../LineManager';
+import ForgetPassword from '../ForgetPassWord'
 export default function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
           <Login/>
+        </Route>
+        <Route exact path="/forget">
+          <ForgetPassword/>
         </Route>
 
         <Route path="/dashboard">

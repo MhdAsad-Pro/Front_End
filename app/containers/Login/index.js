@@ -1,69 +1,65 @@
 import React from 'react';
+import './Login.css';
 import { Link } from 'react-router-dom';
-import { Form, Col, Row, Button } from 'react-bootstrap';
-import './login.css';
-import logo from '../../images/logo.jpg';
-export default function Login() {
-  return (
-    <section className="m-0">
-      <Row className=" align-items-center">
-        <Col md="6">
-          <div className="Image text-center">
-            <img src={logo} className="w-50" />
-            <div className="text-center p-5">
-              <span>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia.
-              </span>
-            </div>
-          </div>
-        </Col>
-        <Col md="6" className="p-5">
-          <Form>
-            <div className="form-row">
-              <div className="col-12">
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email Address</Form.Label>
-                  <Form.Control
-                    className="m-0"
-                    type="email"
-                    placeholder="Enter email"
-                    required
-                  />
-                </Form.Group>
-              </div>
-              <div className="col-12">
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    className="m-0"
-                    type="password"
-                    placeholder="Password"
-                    required
-                  />
-                </Form.Group>
-              </div>
-              <div className="col-12">
-                <div className="row">
-                <div className="col-6">
-                    <Link className=" " to="/dashboard">
-                      Forget Password
-                    </Link>
+export default function Login(props) {
+    return (
+        <section>
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Application<br/> Login Page</h2>
+            <p>Login  from here to access.</p>
+         </div>
+      </div>
+      <div class="container">
+      <div class="main">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="login-form">
+               <form>
+               <div class="text-center">
+                  <h3><i class="fa fa-lock fa-8x"></i></h3>
+                  <h2 class="text-center">Login </h2>
+                  <br/>
+                  <div class="panel-body">
+    
+                    
+    
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                          <input id="email" name="email" placeholder="Email" class="form-control here"  type="text" required="required"/>
+                          
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                          <input type="password"  placeholder="Password" id="password" class="form-control" name="password" required="required"/>
+                          
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                       
+                        <Link to='/dashboard'  class="btn btn-lg btn-primary btn-block" value="Login">Login</Link>
+                      </div>
+                      <label class="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
+                      
+                      <br/>
+                      <Link to='/forget' class="pull-right">Forgot Password?</Link>
+                      <input type="hidden" class="hide" name="token" id="token" value=""/> 
+                      
+                    
+    
                   </div>
-                  <div className="col-6">
-                    <Link className="btn btn-primary" type='submit' to="/dashboard">
-                      Login
-                    </Link>
-                  </div>
-                  
                 </div>
-              </div>
+              
+
+        
+               </form>
             </div>
-          </Form>
-        </Col>
-      </Row>
-    </section>
-  );
-}
+         </div>
+      </div>
+      </div>
+      </section>    
+            );
+    }
