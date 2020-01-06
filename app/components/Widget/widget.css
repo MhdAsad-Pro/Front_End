@@ -1,25 +1,26 @@
-input{
-    width: 40px;
-    margin-left: 20px;
-    margin-top: 10px;
-   
+
+@media (min-width: 576px) { 
+    .widget{
+        width: 100%;
+    }
 }
 
-.card.mb-2 {
-    width: 50%;
-    margin-top: 50px;
-    float: right;
-    margin-left:20px;
-   
+
+@media (min-width: 768px) { 
+    .widget{
+        width: 100%;
+    }
 }
-.btn{
-        margin-top: 20px;
-        
+
+
+@media (min-width: 992px) { 
+    .widget{
+        width: 50%;
+    }
 }
-.btn1{
-    margin-right: 5px;
-    float:right;
-}
-button{
-    float: right;
+
+@media (min-width: 1200px) { 
+    .widget{
+        width: 40%;
+    }
 }

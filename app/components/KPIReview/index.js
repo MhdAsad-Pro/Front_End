@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import './kpi.css';
+import { Link } from 'react-router-dom';
 function KPIReview() {
   let [currentKPI, setCurrentKPI] = useState('Productivity');
 
@@ -16,8 +17,8 @@ function KPIReview() {
         <div className="col-4">
           <Form.Control as="select" onChange={changeHandeler}>
             <option>Productivity</option>
-            <option>Quality</option>                                                            
-          <option>Job Knowledge and Skills</option>
+            <option>Quality</option>
+            <option>Job Knowledge and Skills</option>
             <option>Problem Solving</option>
             <option>Entrepreneurship and Initiative</option>
             <option>Teamwork</option>
@@ -30,10 +31,25 @@ function KPIReview() {
         <div className="card-header">
           <h3>{currentKPI}</h3>
         </div>
-        <input type='text'/>
-        <div className="card-body">Some text</div>
+        <div className="form-row p-2">
+          <div className="col-md-1">
+            <div className="form-group">
+              <Form.Label>Rating</Form.Label>
+              <Form.Control as="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Form.Control>
+            </div>
+          </div>
+        </div>
+        <div className="card-body">Some description will be shown here</div>
         <div className="card-footer text-right">
-          <button className="btn-dark btn">view detail</button>
+          <Link className="btn-dark btn" to="/detail-page">
+            view detail
+          </Link>
         </div>
       </div>
     </div>

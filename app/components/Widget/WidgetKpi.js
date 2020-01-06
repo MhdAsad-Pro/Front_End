@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import './widget.css'
+import './widget.css';
 function WidgetKpi() {
   let [currentKPI, setCurrentKPI] = useState('Productivity');
 
@@ -9,9 +9,9 @@ function WidgetKpi() {
     let value = e.target.value;
     setCurrentKPI(value);
   }
-  
+
   return (
-    <div className="my-2">
+    <div className="my-2 ">
       <div className="form-row mb-2">
         <div className="col-4">
           <Form.Control as="select" onChange={changeHandeler}>
@@ -30,17 +30,14 @@ function WidgetKpi() {
         <div className="card-header">
           <h3>{currentKPI}</h3>
         </div>
-        <div>
-          
-          <input type='number' placeholder='1' />
+        <div className="card-body">
+          <input className="form-control mb-2" type="number" placeholder="1" />
+          <textarea className="w-100 form-control" placeholder="Some Text" />
+          <div className=" mt-2">
+            <button className="btn btn-primary mr-2">Done</button>
+            <button className="btn btn-primary mr-2">Edit</button>
+          </div>
         </div>
-
-        <div className="card-body"><textarea rows="4" cols="60" placeholder='Some Text'></textarea>
-        <button>Done</button>
-        <button className='btn1'>Edit</button>
-
-        </div>
-
       </div>
     </div>
   );

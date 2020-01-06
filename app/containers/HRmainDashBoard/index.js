@@ -4,12 +4,10 @@ import HRcards from '../../components/HRcards';
 import HRgraph from '../../components/HRgraph';
 import HRdropDown from '../../components/HRdropDown';
 import './hr.css';
-
-
 export default function HRdashBoard() {
 
     return (
-        <div className='MainDiv'>
+        <div className='MainDiv py-5'>
             < HRdropDown />
 
             <div className='row'>

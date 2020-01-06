@@ -6,7 +6,7 @@ import HRgraph from '../../components/HRgraph';
 export default function HRdashBoard() {
 
   return (
-    <div className='MainDiv'>
+    <div className='MainDiv py-5'>
       <HRdepart/>
     
     <div className='row'>

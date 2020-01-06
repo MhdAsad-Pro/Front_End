@@ -5,8 +5,8 @@ export default function DashBoard() {
                                                                                                                            
   return (
     
-    <Form className='form'>
-      <h4>Create Employee</h4>
+    <Form className='form px-4'>
+      <h4 className='text-left'>Create Employee</h4>
       <Form.Row>
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Name</Form.Label>

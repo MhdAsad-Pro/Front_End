@@ -6,7 +6,7 @@ import './detail.css'
 export default function HRteamDetail() {
 
   return (
-    <div className='mainDiv'>
+    <div className='mainDiv py-5'>
        <h4>Team A</h4>
     <div className='row'>
      
