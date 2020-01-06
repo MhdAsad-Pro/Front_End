@@ -16,10 +16,9 @@ const popover = (
     </div>
   </div>
 );
-
 const Widget = () => (
     <OverlayTrigger trigger="click" placement="auto" overlay={popover}>
-      <Button variant="success">Hey! Let's Generate Review</Button>
+      <Button variant="success" className='review'>Hey! Let's Generate Review</Button>
     </OverlayTrigger>
 );
 

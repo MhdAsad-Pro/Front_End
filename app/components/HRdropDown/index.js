@@ -1,20 +1,35 @@
 import React from 'react';
-import{Button, ButtonToolbar} from 'react-bootstrap';
+import { Card, Row, Col} from 'react-bootstrap';
 import './dropdown.css'
 import { Link } from 'react-router-dom';
 
 
 export default function () {
-    return (
-        <ButtonToolbar>
-        <Link to='/hr-depart' className='btn btn-primary' size="lg">
-          Department
+  return (
+    <div className='koi'>
+    <Row>
+      <Col md='6'>
+        <Card style={{ width: '10rem'}}>
+          <Card.Body>
+            <Link to='/hr-depart' className='depart'>
+              Department
         </Link>
-        <Link to='/hr-team' className='btn' size="lg">
-          Team
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col md='6'>
+        <Card style={{ width: '10rem'}}>
+          <Card.Body>
+            <Link to='/hr-team' className='depart'>
+              Team
         </Link>
-      </ButtonToolbar>
-        
+          </Card.Body>
+        </Card>
 
-    );
+      </Col>
+    </Row>
+    </div>
+
+
+  );
 }

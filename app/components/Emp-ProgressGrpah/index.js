@@ -1,30 +1,31 @@
 var React = require('react');
 var Component = React.Component;
 var CanvasJSReact = require('../../assests/canvasjs.react');
-//var CanvasJS = require('canvasjs');
+var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 import './graph.css'
-class App extends Component {
+class Graph extends Component {
 	render() {
 		const options = {
 			animationEnabled: true,
 			title:{
-				text: ""
+				text: "Employee Progress Graph"
 			},
 			axisX: {
-				valueFormatString: "MMM"
+				valueFormatString: "",
+				title :"Month",
 			},
 			axisY: {
-				title: "",
-				prefix: "$",
+				title: "KPIs",
+					prefix: "",
 				includeZero: false
 			},
 			data: [{
-				yValueFormatString: "$#,###",
-				xValueFormatString: "MMMM",
+				yValueFormatString: "productivity",
+				xValueFormatString: "",
 				type: "spline",
 				dataPoints: [
-					{ x: new Date(2017, 0), y: 25060 },
+					{ x: new Date(2018, 0), y: 'hello' },
 					{ x: new Date(2017, 1), y: 27980 },
 					{ x: new Date(2017, 2), y: 42800 },
 					{ x: new Date(2017, 3), y: 32400 },
@@ -41,12 +42,12 @@ class App extends Component {
 		}
 		return (
 		<div>
-			{/* <CanvasJS options = {options}
-				/* onRef={ref => this.chart = ref} 
-			/> */}
+			<CanvasJSChart options = {options}
+				/* onRef={ref => this.chart = ref} */
+			/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
 		);
 	}
 }
-export default App;                        
+export default Graph;                     

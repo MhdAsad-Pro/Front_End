@@ -8,20 +8,15 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import BasePage from '../BasePage';
 import Login from '../Login';
-
 import DashBoard from '../DashBoard';
 import DetailPage from '../DetailPage';
 import HRmainDashBoard from '../HRmainDashBoard';
 import HRdepartDetail from '../DepartDetail';
 import AddEmployee from '../AddEmployee';
-
 import HRdashBoard from '../HRdashBoard';
-
 import HRteamDetail from '../HRteamDetail';
-
 import ManagerDashBoard from '../ManagerDashBoard';
 import WidgetCell from '../WidgetCell';
 import Message from '../GenerateMsg';
@@ -31,7 +26,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Login />
+          <Login/>
         </Route>
 
         <Route path="/dashboard">

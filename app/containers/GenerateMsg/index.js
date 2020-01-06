@@ -30,7 +30,7 @@ export default function Message() {
                 <Button variant="primary" type="submit" className="msg">
                   Send Message
             </Button>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="submit" className='draft'>
                   Save Draft
             </Button>
               </Col>
