@@ -10,7 +10,7 @@ export default function HRdashBoard() {
         <section>
             <div className='row'>
                 <div className='col-md-12'>
-                    < HRDT/>
+                    < HRDT />
                 </div>
             </div>
 

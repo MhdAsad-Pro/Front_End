@@ -11,7 +11,7 @@ export default function HRDT () {
       <Col md='6' sm='6'>
         <Card style={{ width: '10rem', backgroundColor:'#e3e5e6'}} >
           <Card.Body>
-            <Link to='/hr-depart' className='depart' style={{color:'#21118a'}}>
+            <Link to='/Depart-main' className='depart' style={{color:'#21118a'}}>
               Department
         </Link>
           </Card.Body>

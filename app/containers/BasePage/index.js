@@ -14,8 +14,8 @@ export default function BasePage(props) {
          Hr Home
         </Link>
 
-        <Link className='btn btn-block  btn-light' to="/hr-dashbaord">
-          HR Dashboard
+        <Link className='btn btn-block  btn-light' to="/Depart-main">
+          HR DepartmentMain
         </Link>
         {/* Manger Link */}
 

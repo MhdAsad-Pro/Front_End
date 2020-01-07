@@ -15,7 +15,7 @@ import DetailPage from '../DetailPage';
 import HRmainDashBoard from '../HR-DashBoard';
 import HRdepartDetail from '../DepartDetail';
 import AddEmployee from '../AddEmployee';
-import HRdashBoard from '../HRdashBoard';
+import HRdashBoard from '../HR-DepartMain';
 import HRteamDetail from '../HRteamDetail';
 import ManagerDashBoard from '../ManagerDashBoard';
 import WidgetCell from '../WidgetCell';
@@ -61,7 +61,7 @@ export default function App() {
           </BasePage>
         </Route>
 
-        <Route path="/hr-dashbaord">
+        <Route path="/Depart-main">
           <BasePage>
             <HRdashBoard />
           </BasePage>
