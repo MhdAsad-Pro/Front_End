@@ -18,6 +18,7 @@ function ManagerCard() {
                <th>Designation</th>
                <th>Email</th>
                <th>Picture</th>
+               <th>Status</th>
                </thead>
                <tbody>
                  <tr>
@@ -25,30 +26,36 @@ function ManagerCard() {
                  <td>Software Engineer</td>
                  <td>abc@gmail.com</td>
                  <td>.jpg</td>
+                 <td>Done</td>
                  </tr>
                  <tr>
                  <td>abc</td>
                  <td>Quality Assurance</td>
                  <td>abc@gmail.com</td>
                  <td>.jpg</td>
+                 <td>Done</td>
                  </tr>
                  <tr>
                  <td>abc</td>
                  <td>UI Engineer</td>
                  <td>abc@gmail.com</td>
                  <td>.jpg</td>
+                 <td>Done</td>
                  </tr>
                  <tr>
                  <td>abc</td>
                  <td>Project Manager</td>
                  <td>abc@gmail.com</td>
                  <td>.jpg</td>
+                 <td>Done</td>
                  </tr>
                  <tr>
                  <td>abc</td>
                  <td>Pending</td>
                  <td>Graphic Designer</td>
                  <td>.jpg</td>
+                 <td>Not Done</td>
+                
                  </tr>
                 </tbody>
               

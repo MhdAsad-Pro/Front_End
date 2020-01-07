@@ -27,21 +27,21 @@ export default function DashBoard() {
 
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>CNIC</Form.Label>
-          <Form.Control type="number" placeholder="Enter CNIC" />
+          <Form.Control type="text"  data-inputmask="'mask': '99999-9999999-9'"  placeholder="XXXXX-XXXXXXX-X"  name="cnic" required="" ></Form.Control>
         </Form.Group>
       </Form.Row>
       <Form.Row>
         <Form.Group as={Col} md='6' controlId="formGridEmail">
           <Form.Label>Moblie number</Form.Label>
-          <Form.Control type="number" placeholder="Enter Mobile Number" />
+          <Form.Control type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required  placeholder='Enter Mobile Number'/>
         </Form.Group>
 
         <Form.Group  as={Col} sm='0' id="formGridCheckbox">
           <Form.Label>Gender</Form.Label>
         </Form.Group>
         <Form.Group className='radio' as={Col} sm='0' id="formGridRadio">
-          <Form.Check type="radio" label="Male" />
-          <Form.Check type="radio" label="Female" />
+          <Form.Check type="radio" label="Male" name='radio'/>
+          <Form.Check type="radio" label="Female" name='radio'/>
         </Form.Group>
       </Form.Row>
       <Form.Row>
@@ -53,8 +53,8 @@ export default function DashBoard() {
           <Form.Label>Status</Form.Label>
         </Form.Group>
         <Form.Group className='radio' as={Col} sm='0' id="formGridRadio">
-          <Form.Check type="radio" label="Active" />
-          <Form.Check type="radio" label="Inactive" />
+          <Form.Check type="radio" label="Active" name='check' />
+          <Form.Check type="radio" label="Inactive" name='check'/>
         </Form.Group>
       </Form.Row>
 
@@ -92,10 +92,6 @@ export default function DashBoard() {
           <Form.Control />
         </Form.Group>
       </Form.Row>
-
-      <Form.Group id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
 
       <Button variant="primary" type="submit">
         Save employee

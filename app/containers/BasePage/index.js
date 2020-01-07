@@ -10,7 +10,7 @@ export default function BasePage(props) {
         <div className="col-2 my-nav">
           <h1 className="text-white">Hira</h1>
           {/** HR LinkS START*/}
-        <Link className='btn btn-block  btn-light' to="/hr-main">
+        <Link className='btn btn-block  btn-light' to="/hr-dashboard">
          Hr Home
         </Link>
 

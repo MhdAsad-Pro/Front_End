@@ -12,7 +12,7 @@ import BasePage from '../BasePage';
 import Login from '../Login';
 import DashBoard from '../DashBoard';
 import DetailPage from '../DetailPage';
-import HRmainDashBoard from '../HRmainDashBoard';
+import HRmainDashBoard from '../HR-DashBoard';
 import HRdepartDetail from '../DepartDetail';
 import AddEmployee from '../AddEmployee';
 import HRdashBoard from '../HRdashBoard';
@@ -44,7 +44,7 @@ export default function App() {
           </BasePage>
         </Route>
         {/** HR ROUTES START*/}
-        <Route path="/hr-main">
+        <Route path="/hr-dashboard">
           <BasePage>
             <HRmainDashBoard />
           </BasePage>
@@ -113,20 +113,5 @@ export default function App() {
 
       </Switch>
     </Router>
-
-    // <DetailPage/>
-    // <AddEmployee/>
-    //<HRmainDashBoard/>
-    //<HRteamDetail />
-    //<HRdashBoard/>
-    // <HRdepartDetail/>
-    //<ManagerDashBoard/>
-    // <DashBoard/>
-    //<HRmainDashBoard/>
-    // <WidgetCell />
-    //<Message/>
-    // <BasePage>
-    // <LineManager/>
-    // </BasePage>
   );
 }

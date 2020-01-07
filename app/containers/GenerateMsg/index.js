@@ -3,13 +3,13 @@ import { Form, Button, Container, Card, Row, Col } from 'react-bootstrap';
 import './msg.css';
 export default function Message() {
   return (
-    <Container className="py-5">
+    <Container className="py-3">
       <Card>
         <Card.Body>
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email Address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email"/>
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">

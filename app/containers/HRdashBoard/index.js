@@ -1,15 +1,16 @@
 import React from 'react';
-import HRdepart from '../../components/HRdepart'
+//import HRdepart from '../../components/HRdepart'
 import HRcards from '../../components/HRcards';
 import HRgraph from '../../components/HRgraph';
 
 export default function HRdashBoard() {
 
   return (
-    <div className='MainDiv py-5'>
-      <HRdepart/>
+    //<HRdepart/>
+    <div className='MainDiv py-05'>
+      
     
-    <div className='row'>
+    <div className='row py-5'>
       <div className='col-md-6'>
         <HRcards />
       </div>
