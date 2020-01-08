@@ -21,7 +21,8 @@ import ManagerDashBoard from '../ManagerDashBoard';
 import WidgetCell from '../WidgetCell';
 import Message from '../GenerateMsg';
 import LineManager from '../LineManager';
-import ForgetPassword from '../ForgetPassWord'
+import ForgetPassword from '../ForgetPassWord';
+import User from '../UserProfile';
 export default function App() {
   return (
     <Router>
@@ -95,7 +96,13 @@ export default function App() {
             <AddEmployee/>
           </BasePage>
         </Route>
+  {/* User Profile */}
 
+  <Route path="/profile">
+          <BasePage>
+            <User/>
+          </BasePage>
+        </Route>
 
 
          {/* Widget Route */}

@@ -1,0 +1,75 @@
+.card-header{
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: linear-gradient(60deg, #473167, #8e24aa);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14);
+    color: white;
+}
+h4{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 2.1em;
+}
+h1{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    border-radius: 3px;
+    font-size: 2.1em;
+}
+.title{
+    padding: 80px 15px;
+    margin-top: 70px;
+    text-align: center;
+}
+h1 {
+    font-size: 1.em;
+}
+.card-body{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    
+    
+}
+
+
+.formStyle { 
+    width: 100%;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color: #ecf0f1; 
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none; 
+    font-size: 1em;
+    font-weight: 100;
+    color: #0f0e0e;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+    
+
+  }
+  .form-group{
+      text-align: center;
+  }
+  .MainDiv{
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+  
+  .wrapper{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 35px;
+  }
+  .file{
+    padding-left: 22px;  
+  }
+  .button{
+    padding-right: 0px;
+    padding-left: 70px;
+    border-radius: 0;
+    
+  }
