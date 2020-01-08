@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, NavDropdown } from 'react-bootstrap';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+
 import './header.css'
 
 function Header() {
@@ -14,11 +16,12 @@ function Header() {
             alignRight
             title={<i className="fa fa-user Nav" />}
             id="basic-nav-dropdown" >
-            <NavDropdown.Item href="#"> <i className="fa fa-user" />Account</NavDropdown.Item>
+            <NavDropdown.Item href="#"> <i className="fa fa-user" />Profile</NavDropdown.Item>
             <NavDropdown.Item href="#">
-            <i className="fas fa-cogs"/> Settings
+            <i class="fa fa-cog" aria-hidden="true"></i>Setting
             </NavDropdown.Item>
-            <NavDropdown.Item href="#"> <i className="fas fa-sign-out-alt"/>
+            
+            <NavDropdown.Item href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>
               Logout
             </NavDropdown.Item>
           </NavDropdown>

@@ -32,7 +32,7 @@ function WidgetKpi() {
         </div>
         <div className="card-body">
         <div className="form-row p-2">
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6">
             <div className="form-group">
               <Form.Label>Rating</Form.Label>
               <Form.Control as="select">
