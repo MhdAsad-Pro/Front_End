@@ -18,6 +18,7 @@ import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import 'react-fontawesome/lib/index';
+import 'font-awesome/css/font-awesome.min.css';
 
 // Import root app
 import App from 'containers/App';

@@ -1,11 +1,9 @@
 import React from 'react';
-import KPIReview from '../../components/KPIReview';
 import Graph from '../../components/Emp-ProgressGrpah';
-//import HRgraph from '../../components/HRgraph'
-
+import LineCard from '../../components/LineCard'
 export default function LineManager (){
     return(
-        <section className='py-05'>
+        <section className=''>
         <div className='row'>
           <div className='col-md-12'>
           <Graph/>
@@ -13,7 +11,7 @@ export default function LineManager (){
         </div>
         <div className='row'>
           <div className='col-md-12'>
-          <KPIReview/>
+          <LineCard/>
           </div>
         </div>  
       </section>

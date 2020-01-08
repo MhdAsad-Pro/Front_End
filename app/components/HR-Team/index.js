@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
+import './HR-Team.css'
 //import { Link } from 'react-router-dom';
 function HRteam() {
   let [currentTeam, setCurrentTeam] = useState('Software Engineer');
@@ -11,10 +12,10 @@ function HRteam() {
   }
 
   return (
-    <div className="myDiv">
-      <div className="form-row mb-2">
+    <div className="">
+      <div className="Team">
         <div className="col-12">
-          <Form.Control as="select" onChange={changeHandeler} className="My-Form">
+          <Form.Control as="select" onChange={changeHandeler}>
             <option>Software Engineer</option>
             <option>Front-End Engineer</option>
             <option>Back-End Engineer</option>
@@ -23,7 +24,7 @@ function HRteam() {
           </Form.Control>
         </div>
       </div>
-      <h4>{currentTeam}</h4>
+      <h6 className='Heading1'>{currentTeam}</h6>
     </div>
 
   );

@@ -3,6 +3,7 @@ var Component = React.Component;
 var CanvasJSReact = require('../../assests/canvasjs.react');
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
 import './graph.css'
 class Graph extends Component {
 	render() {
@@ -12,20 +13,19 @@ class Graph extends Component {
 				text: "Employee Progress Graph"
 			},
 			axisX: {
-				valueFormatString: "",
-				title :"Month",
+				valueFormatString: "MMM"
 			},
 			axisY: {
 				title: "KPIs",
-					prefix: "",
+				prefix: "",
 				includeZero: false
 			},
 			data: [{
-				yValueFormatString: "productivity",
+				yValueFormatString: "",
 				xValueFormatString: "",
 				type: "spline",
 				dataPoints: [
-					{ x: new Date(2018, 0), y: 'hello' },
+					{ x: new Date(2017, 0), y: 25060 },
 					{ x: new Date(2017, 1), y: 27980 },
 					{ x: new Date(2017, 2), y: 42800 },
 					{ x: new Date(2017, 3), y: 32400 },
@@ -41,13 +41,16 @@ class Graph extends Component {
 			}]
 		}
 		return (
-		<div>
+		
+				<div>
 			<CanvasJSChart options = {options}
 				/* onRef={ref => this.chart = ref} */
 			/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
 		</div>
-		);
+		
+			
+	);	
 	}
 }
-export default Graph;                     
+export default Graph;                    

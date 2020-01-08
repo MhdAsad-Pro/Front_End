@@ -1,20 +1,33 @@
-import React from 'react';
-import { Dropdown} from 'react-bootstrap';
-export default function HRdeparts(){
-  return(
-<Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Dropdown Button
-  </Dropdown.Toggle>
+import React, { useState } from 'react';
+import { Form } from 'react-bootstrap';
+import './depart.css'
+function HRdepart() {
+  let [currentDepart, setCurrentDepart] = useState('Enterprise');
 
-  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-  </Dropdown.Menu>
-</Dropdown>
+  function changeHandeler(e) {
+    console.log(e.target.value);
+    let value = e.target.value;
+    setCurrentDepart(value);
+  }
+
+  return (
+    <div className="">
+      <div className="Team">
+        <div className="col-12">
+          <Form.Control as="select" onChange={changeHandeler} className="">
+            <option>Enterprise</option>
+            <option>IT Department</option>
+            <option>Ecommerce Service</option>
+            <option>Mobile</option>
+            <option>Small Business</option>
+            <option>Teamwork</option>
+          </Form.Control>
+        </div>
+      </div>
+      <h6 className='Heading1'>{currentDepart}</h6>
+    </div>
 
   );
 }
- 
 
+export default HRdepart;

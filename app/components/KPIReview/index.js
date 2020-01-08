@@ -1,59 +1,79 @@
-import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
-import './kpi.css';
+import React from 'react';
+import { Card, Col, Row, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
 function KPIReview() {
-  let [currentKPI, setCurrentKPI] = useState('Productivity');
+    return (
+        <Row>
+            <Col>
+                <Card>
+                    <Card.Header>
+                        <h4>Current Review</h4>
+                    </Card.Header>
+                    <Card.Body>
+                        <Table>
+                            <thead>
+                                <th>KPIs</th>
+                                <th>Rating</th>
+                                <th>Notes</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Prodectivity</td>
+                                    <td>1</td>
+                                    <td>abc@gmail.com</td>
 
-  function changeHandeler(e) {
-    console.log(e.target.value);
-    let value = e.target.value;
-    setCurrentKPI(value);
-  }
+                                </tr>
+                                <tr>
+                                    <td> Quality</td>
+                                    <td>2</td>
+                                    <td>abc@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Job Knowledge and Skills</td>
+                                    <td>3</td>
+                                    <td>abc@gmail.com</td>
 
-  return (
-    <div className="my-2">
-      <div className="form-row mb-2">
-        <div className="col-4">
-          <Form.Control as="select" onChange={changeHandeler}>
-            <option>Productivity</option>
-            <option>Quality</option>
-            <option>Job Knowledge and Skills</option>
-            <option>Problem Solving</option>
-            <option>Entrepreneurship and Initiative</option>
-            <option>Teamwork</option>
-            <option>Communication</option>
-            <option>Discipline</option>
-          </Form.Control>
-        </div>
-      </div>
-      <div className="card">
-        <div className="card-header">
-          <h3>{currentKPI}</h3>
-        </div>
-        <div className="form-row p-2">
-          <div className="col-md-1">
-            <div className="form-group">
-              <Form.Label>Rating</Form.Label>
-              <Form.Control as="select">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Form.Control>
-            </div>
-          </div>
-        </div>
-        <div className="card-body">Some description will be shown here</div>
-        <div className="card-footer text-right">
-          <Link className="btn-dark btn" to="/detail-page">
-            view detail
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
+                                </tr>
+                                <tr>
+                                    <td>Problem Solving</td>
+                                    <td>4</td>
+                                    <td>Some description</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Entrepreneurship and Initiative</td>
+                                    <td>3</td>
+                                    <td>Some description</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Teamwork</td>
+                                    <td>3</td>
+                                    <td>Some description</td>
+                                </tr>
+                                <tr>
+                                    <td> Communication</td>
+                                    <td>3</td>
+                                    <td>Some description</td>
+                                </tr>
+                                <tr>
+                                    <td>Discipline</td>
+                                    <td>3</td>
+                                    <td>Some description</td>
+
+                                </tr>
+                            </tbody>
+                        </Table>
+                       
+                    </Card.Body>
+                </Card>
+                <div className="text-right my-2">
+                            <Link to='/detail-page' className="btn btn-secondary px-4">View History</Link>
+                        </div>
+            </Col>
+        </Row>
+   );
 }
 
 export default KPIReview;
