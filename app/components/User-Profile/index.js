@@ -6,7 +6,7 @@ export default function UserProfile() {
 
     return (
         <div className="MainDiv">
-           
+
             <div className='row'>
                 <div className='col-md-12'>
                     <h1>User Profile</h1>
@@ -102,22 +102,21 @@ export default function UserProfile() {
 
                             </div>
                         </div>
-                        <br/>
-                        <br/>
-                            <div class="button">
+                        <br />
+                        <div class="button">
                             <div class="col-md-12">
-                            <Button variant="primary" >
-      Update Profile
+                                <Button variant="primary" >
+                                    Update Profile
     </Button>
-    </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
 
-       
+        </div>
+
+
     );
 }

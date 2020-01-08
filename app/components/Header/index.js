@@ -16,7 +16,7 @@ function Header() {
             alignRight
             title={<i className="fa fa-user Nav" />}
             id="basic-nav-dropdown" >
-            <NavDropdown.Item href="#"> <i className="fa fa-user" />Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/profile"> <i className="fa fa-user" />Profile</NavDropdown.Item>
             <NavDropdown.Item href="#">
             <i class="fa fa-cog" aria-hidden="true"></i>Setting
             </NavDropdown.Item>
