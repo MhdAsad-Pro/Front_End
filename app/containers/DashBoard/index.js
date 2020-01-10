@@ -2,7 +2,6 @@ import React from 'react';
 import KPIReview from '../../components/KPIReview'
 import Graph from '../../components/Emp-ProgressGrpah';
 //import App from '../App';
-//import App from '../../components/Emp-ProgressGrpah'
 //import {Col,Row, Container} from 'react-bootstrap'
 export default function DashBoard() {
   return (
@@ -18,9 +17,6 @@ export default function DashBoard() {
         <KPIReview/>
         </div>
       </div>
-
-   
-    
     </section>
   );
 }

@@ -22,7 +22,8 @@ import WidgetCell from '../WidgetCell';
 import Message from '../GenerateMsg';
 import LineManager from '../LineManager';
 import ForgetPassword from '../ForgetPassWord';
-import User from '../UserProfile';
+import Review from '../ReviewForm';
+//import User from '../UserProfile';
 export default function App() {
   return (
     <Router>
@@ -98,12 +99,12 @@ export default function App() {
         </Route>
   {/* User Profile */}
 
-  <Route path="/profile">
+{/* <Route path="/profile">
           <BasePage>
             <User/>
           </BasePage>
         </Route>
-
+ */}  
 
          {/* Widget Route */}
 
@@ -112,11 +113,13 @@ export default function App() {
             <WidgetCell/>
           </BasePage>
         </Route>
+         {/* Review Form Route */}
 
-       
-
-
-
+         <Route path="/form">
+          <BasePage>
+            <Review/>
+          </BasePage>
+        </Route>
 
       </Switch>
     </Router>

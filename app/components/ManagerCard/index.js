@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
-import '../TeamCard/team.css'
+
 
 function ManagerCard() {
   return (
@@ -9,7 +9,7 @@ function ManagerCard() {
     
         <Card>
           <Card.Header>
-            <h4>Review Summary</h4>
+            <h4></h4>
           </Card.Header>
           <Card.Body>
             <Table>       

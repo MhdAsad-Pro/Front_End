@@ -1,0 +1,23 @@
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.Padding{
+    margin-top: 30px;
+}
+.ReviewForm{
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ReviewButton{
+    float: right;
+}
+.ReviewHeader{
+    font-size: 20px;
+    background-color:#1b3120;
+    color: white;
+}
