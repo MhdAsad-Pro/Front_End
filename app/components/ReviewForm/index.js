@@ -1,7 +1,7 @@
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 import './form.css'
-import { Card, Container, Col, Row, ButtonToolbar, Button } from 'react-bootstrap';
+import { Card, Col, Row, Button, Form } from 'react-bootstrap';
 
 export default class ReviewForm extends React.Component {
     constructor() {
@@ -16,17 +16,20 @@ export default class ReviewForm extends React.Component {
     render() {
         const { rating } = this.state;
         return (
+            
             <div className='ReviewForm'>
-                <Container>
-                    <Card >
+               
+
+                <Card >
+                    <Form>
                         <Card.Header className='ReviewHeader'>
-                            Performance Competencies
+                        Employee Performance Competencies
               </Card.Header>
                         <Card.Body>
                             {/*productivity */}
                             <div className='TheReview'>
                                 <div className='product'>
-                                    <h5> 1) Productivity </h5>
+                                    <h5 > 1) Productivity </h5>
                                     <Row>
                                         <Col md='04'>
                                             <p>Needs Improvement</p>
@@ -45,7 +48,7 @@ export default class ReviewForm extends React.Component {
                                 </div>
                                 <div className='textarea'>
                                     <h6>Brief explanation</h6>
-                                    <textarea rows="4" cols="80"></textarea>
+                                    <textarea rows="4" cols="80" required></textarea>
                                 </div>
 
                                 {/*   Quality */}
@@ -211,12 +214,12 @@ export default class ReviewForm extends React.Component {
                                     </Row>
                                 </div>
                                 <div className='textarea'>
-                                  
-                                     
+
+
                                     <h6>Brief explanation</h6>
-                                             
+
                                     <textarea rows="4" cols="80"></textarea>
-                                 
+
                                 </div>
                             </div>
                         </Card.Body>
@@ -225,8 +228,10 @@ export default class ReviewForm extends React.Component {
                                 Submit
   </Button>
                         </Card.Footer>
-                    </Card>
-                </Container>
+
+                    </Form>
+                </Card>
+
             </div>
         );
     }
