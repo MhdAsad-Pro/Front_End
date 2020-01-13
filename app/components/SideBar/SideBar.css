@@ -1,0 +1,39 @@
+.navi{
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    background: #1a2c54;
+    padding-top: 20px;
+    
+}
+
+img {
+    border-style: none;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+
+/*awfr*/
+.navi i {
+    margin-right: 15px;
+}
+ .DashBoard{
+       
+        height: 3em;
+        color: white;
+        padding-left: 70px;
+        padding-top: 20px;  
+        border: 0.5px solid;
+        border-color: black; 
+       
+    }
+    a{
+
+        color: white;   
+ }
+span{
+    color:white;
+    
+    text-align: center;
+}
