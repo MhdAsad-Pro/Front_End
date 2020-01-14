@@ -23,6 +23,7 @@ import Message from '../GenerateMsg';
 import LineManager from '../LineManager';
 import ForgetPassword from '../ForgetPassWord';
 import Review from '../ReviewForm';
+import KPIList from '../KPIListPage'
 //import User from '../UserProfile';
 export default function App() {
   return (
@@ -118,6 +119,13 @@ export default function App() {
          <Route path="/form">
           <BasePage>
             <Review/>
+          </BasePage>
+        </Route>
+        {/* KPI List Form Route */}
+
+        <Route path="/kpilist">
+          <BasePage>
+            <KPIList/>
           </BasePage>
         </Route>
 

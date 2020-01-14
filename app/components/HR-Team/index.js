@@ -26,7 +26,6 @@ function HRteam() {
       </div>
       <h6 className='Heading1'>{currentTeam}</h6>
     </div>
-
   );
 }
 
