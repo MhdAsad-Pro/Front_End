@@ -1,11 +1,16 @@
 import React from 'react';
-import ManagerCard from '../../components/ManagerCard';
-
-export default function ManagerDashBoard() {
+import ManagerDashBoard from '../../components/ManagerDashBoard';
+import ManagerKPI from '../../components/ManagerKPI'
+import Graph from '../../components/Emp-ProgressGrpah';
+export default function ManagerMain(){
     return (
-        <div className="py-3">
-            <h5>Employee Reviews</h5>
-            <ManagerCard />
-        </div>
+
+
+        <section>
+           <Graph/>
+            <ManagerKPI/>
+            <ManagerDashBoard/>
+        </section>
+        
     );
 }

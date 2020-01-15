@@ -17,7 +17,7 @@ import HRdepartDetail from '../DepartDetail';
 import AddEmployee from '../AddEmployee';
 import HRdashBoard from '../HR-DepartMain';
 import HRteamDetail from '../HRteamDetail';
-import ManagerDashBoard from '../ManagerDashBoard';
+import ManagerDashBoard from '../ManagerEmpList';
 import WidgetCell from '../WidgetCell';
 import Message from '../GenerateMsg';
 import LineManager from '../LineManager';
@@ -25,6 +25,7 @@ import ForgetPassword from '../ForgetPassWord';
 import Review from '../ReviewForm';
 import KPIList from '../KPIListPage'
 //import User from '../UserProfile';
+import ManagerMain from'../ManagerDashBoard'
 export default function App() {
   return (
     <Router>
@@ -126,6 +127,13 @@ export default function App() {
         <Route path="/kpilist">
           <BasePage>
             <KPIList/>
+          </BasePage>
+        </Route>
+          {/* Manager Dashboard Form Route */}
+
+          <Route path="/manager-dashboard">
+          <BasePage>
+            <ManagerMain/>
           </BasePage>
         </Route>
 

@@ -16,7 +16,7 @@ class Graph extends Component {
         valueFormatString: 'MMM',
       },
       axisY: {
-        title: 'KPIs',
+        title: 'Average Rating',
         prefix: '',
         includeZero: false,
       },
