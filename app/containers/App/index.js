@@ -25,7 +25,10 @@ import ForgetPassword from '../ForgetPassWord';
 import Review from '../ReviewForm';
 import KPIList from '../KPIListPage'
 //import User from '../UserProfile';
-import ManagerMain from'../ManagerDashBoard'
+import ManagerMain from'../ManagerDashBoard';
+import TeamEmployeeList from '../TeamEmployee';
+import DepartEmployeeList from '../DepartEmployee';
+ 
 export default function App() {
   return (
     <Router>
@@ -65,7 +68,7 @@ export default function App() {
           </BasePage>
         </Route>
 
-        <Route path="/Depart-main">
+        <Route path="/depart-main">
           <BasePage>
             <HRdashBoard />
           </BasePage>
@@ -136,8 +139,22 @@ export default function App() {
             <ManagerMain/>
           </BasePage>
         </Route>
+         {/* Team Employee List Form Route */}
 
-      </Switch>
+         <Route path="/team-emp">
+          <BasePage>
+            <TeamEmployeeList/>
+          </BasePage>
+        </Route>
+ {/* Team Employee List Form Route */}
+
+ <Route path="/depart-emp">
+          <BasePage>
+            <DepartEmployeeList/>
+          </BasePage>
+        </Route>
+
+      </Switch>      
     </Router>
   );
 }

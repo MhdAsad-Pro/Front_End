@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
+import Rater from 'react-rater'
+import 'react-rater/lib/react-rater.css'
 import './DetailPage.css';
 function DetailDropDown() {
   let [filterObj, setFilterObj] = useState({
@@ -84,17 +86,10 @@ function DetailDropDown() {
         <div className="form-row p-2">
           <div className="col-md-1">
             <div className="form-group">
-              <Form.Label>Rating</Form.Label>
-              <Form.Control as="select">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Form.Control>
+            <Rater total={5} rating={2} />
             </div>
           </div>
-        </div>
+        </div>    
         <div className="card-body">Some description will be shown here</div>
       </div>
     </div>

@@ -5,7 +5,6 @@ import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 import { Link } from 'react-router-dom';
 export default function ManagerKPI() {
-
     return (
         <section>
             <Row>
@@ -20,7 +19,6 @@ export default function ManagerKPI() {
                                     <Rater total={5} rating={2} />
                                 </Col>
                             </Row>
-                            <h6>notes</h6>
                             <div>Some description</div>
                         </Card.Body>
                     </Card>

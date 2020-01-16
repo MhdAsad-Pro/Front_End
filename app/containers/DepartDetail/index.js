@@ -7,7 +7,7 @@ export default function HRdepartDetail() {
 
   return (
     <div className='mainDiv'>
-       <h4>Department Name</h4>
+       <h4></h4>
     <div className='row'>
      
       <div className='col-md-6'>

@@ -26,7 +26,7 @@ class Graph extends Component {
           xValueFormatString: '',
           type: 'spline',
           dataPoints: [
-            { x: new Date(2017, 0), y: 1 },
+            { x: new Date(2017, 0), y: 3 },
             { x: new Date(2017, 1), y: 2 },
             { x: new Date(2017, 2), y: 2 },
             { x: new Date(2017, 3), y: 3 },
