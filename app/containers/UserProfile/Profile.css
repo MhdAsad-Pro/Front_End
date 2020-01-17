@@ -2,11 +2,11 @@
     padding: 15px;
     margin-top: 20px;
     border-radius: 3px;
-    background: linear-gradient(60deg, #473167, #8e24aa);
+    background: #0b3658;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14);
     color: white;
 }
-h4{
+.edit{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
     color: white;
