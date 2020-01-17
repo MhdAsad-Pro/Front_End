@@ -14,7 +14,7 @@ function Header() {
             alignRight
             title={<i className="fa fa-user Nav"/>}
             id="basic-nav-dropdown" >
-            <NavDropdown.Item href="#"><i class="fa fa-user-circle" aria-hidden="true" style={{fontSize:'20px'}}></i>User Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/profile"><i class="fa fa-user-circle" aria-hidden="true" style={{fontSize:'20px'}}></i>User Profile</NavDropdown.Item>
             <NavDropdown.Item href="#">
             <i class="fa fa-cog" aria-hidden="true" style={{fontSize:'20px'}}></i>Setting
             </NavDropdown.Item>

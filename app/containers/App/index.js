@@ -24,10 +24,13 @@ import LineManager from '../LineManager';
 import ForgetPassword from '../ForgetPassWord';
 import Review from '../ReviewForm';
 import KPIList from '../KPIListPage'
-//import User from '../UserProfile';
+import User from '../UserProfile';
 import ManagerMain from'../ManagerDashBoard';
 import TeamEmployeeList from '../TeamEmployee';
 import DepartEmployeeList from '../DepartEmployee';
+import ManagerTrackSystem from '../ManagerTrack';
+import KPIListPage from '../KPIListPage';
+import SideBar from '../../components/SideNav';
  
 export default function App() {
   return (
@@ -104,12 +107,12 @@ export default function App() {
         </Route>
   {/* User Profile */}
 
-{/* <Route path="/profile">
+ <Route path="/profile">
           <BasePage>
             <User/>
           </BasePage>
         </Route>
- */}  
+ 
 
          {/* Widget Route */}
 
@@ -153,6 +156,31 @@ export default function App() {
             <DepartEmployeeList/>
           </BasePage>
         </Route>
+        {/* Team Employee List Form Route */}
+
+ <Route path="/track">
+          <BasePage>
+            <ManagerTrackSystem/>
+          </BasePage>
+        </Route>
+
+ {/*kpi List List Form Route */}
+
+ <Route path="/kpi-list">
+          <BasePage>
+            <KPIListPage/>
+          </BasePage>
+        </Route>
+
+ {/*side Form Route */}
+
+ <Route path="/side">
+          <BasePage>
+            <SideBar/>
+          </BasePage>
+        </Route>
+
+
 
       </Switch>      
     </Router>

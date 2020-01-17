@@ -1,49 +1,44 @@
 import React from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
 import './card.css'
+function HRcards(props) {
 
-
-function HRcards() {
   return (
-    <Row>
+    <Row className='hrcard'>
       <Col>
         <Card>
           <Card.Header>
-            <h4>Review Summary</h4>
+            <h4 >Review Summary</h4>
           </Card.Header>
           <Card.Body>
             <Table>
               <tbody>
                 <tr>
                   <td>Total Employee</td>
-                  <td>350</td>
-
+                  <td>{props.TotalEmployee}</td>
                 </tr>
                 <tr>
                   <td>No of review generated</td>
-                  <td>300</td>
+                  <td>{props.NoReview}</td>
 
                 </tr>
                 <tr>
                   <td>No of done</td>
 
-                  <td>250</td>
+                  <td>{props.Done}</td>
                 </tr>
                 <tr>
                   <td>No of not done</td>
 
-                  <td>50</td>
+                  <td>{props.NotDone}</td>
                 </tr>
-
               </tbody>
             </Table>
           </Card.Body>
         </Card>
       </Col>
-
     </Row>
 
   );
 }
-
 export default HRcards;

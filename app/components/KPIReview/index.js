@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Col, Row, Table } from 'react-bootstrap';
+import {Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import KPIReviewCard from '../KPIReviewCard';
 import { fetchEmployeeReviews } from '../../api';
@@ -15,7 +15,6 @@ function KPIReview() {
     console.log('Sucessfully fetched', data);
     setReviews(data);
   }
-
   return (
     <Row>
       <Col>

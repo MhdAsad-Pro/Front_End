@@ -1,0 +1,24 @@
+.sidenav---sidenav---_2tBP {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1006;
+    min-width: 70px;
+    background: rgb(89, 130, 206);
+    -webkit-transition: min-width 0.2s;
+    -moz-transition: min-width 0.2s;
+    -o-transition: min-width 0.2s;
+    -ms-transition: min-width 0.2s;
+    transition: min-width 0.2s;
+    line-height: 10px;
+}
+.logo-image{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -2px;
+    align-items: center;
+    padding-bottom: 50px;
+}

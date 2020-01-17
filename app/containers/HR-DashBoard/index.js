@@ -1,11 +1,20 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import HRcards from '../../components/HRcards';
-import HRgraph from '../../components/HRgraph';
 import HRDT from '../../components/HR-DT';
-import { Card } from 'react-bootstrap';
+import {fetchHRDasboard} from '../../api';
 import './hr.css';
 export default function HRdashBoard() {
+    const [Summary, setSummary] = useState([]);
 
+    useEffect(() => {
+        fetchHRDasboard(onHRFetchSuccess);
+    }, []);
+
+    function onHRFetchSuccess(data) {
+        console.log('Sucessfully fetched', data);
+        setSummary(data);
+    }
     return (
         <section>
             <div className='row'>
@@ -14,17 +23,19 @@ export default function HRdashBoard() {
                 </div>
             </div>
             <div className='row'>
-                <div className='col-md-6'>
-                    <HRcards />
-                </div>
-                <div className='col-md-6 graph'>
-                    <Card>
-                        <Card.Body>
-                            <HRgraph />
-                        </Card.Body>
-                    </Card>
-                </div>
+                {Summary.map(SummaryItem => (
+                    <div className='col-md-12' >
+                        <HRcards
+                            TotalEmployee={SummaryItem.TotalEmployee}
+                            NoReview={SummaryItem.NoReview}
+                            Done={SummaryItem.Done}
+                            NotDone={SummaryItem.NotDone}
+                        />
+                    </div>
+                ))}
+                
             </div>
+
         </section>
     );
 }

@@ -16,14 +16,12 @@ export default class ReviewForm extends React.Component {
     render() {
         const { rating } = this.state;
         return (
-            
-            <div className='ReviewForm'>
-               
 
+            <div className='ReviewForm'>
                 <Card >
                     <Form>
                         <Card.Header className='ReviewHeader'>
-                        Employee Performance Competencies
+                            Employee Performance Competencies
               </Card.Header>
                         <Card.Body>
                             {/*productivity */}
@@ -219,7 +217,6 @@ export default class ReviewForm extends React.Component {
                                     <h6>Brief explanation</h6>
 
                                     <textarea rows="4" cols="80"></textarea>
-
                                 </div>
                             </div>
                         </Card.Body>
