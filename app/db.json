@@ -1,0 +1,194 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "Hira"
+        },
+        {
+            "id": 2,
+            "username": "Hina"
+        },
+        {
+            "id": 3,
+            "username": "Asad"
+        }
+    ],
+    "kpis": [
+        {
+            "id": 1,
+            "name": "Productivity"
+        },
+        {
+            "id": 2,
+            "name": "Quality"
+        },
+        {
+            "id": 3,
+            "name": "Job Knowledge and Skills"
+        },
+        {
+            "id": 4,
+            "name": "Problem Solving"
+        },
+        {
+            "id": 5,
+            "name": "Team Work"
+        },
+        {
+            "id": 6,
+            "name": "Entreprnurship and Inititative"
+        },
+        {
+            "id": 7,
+            "name": "Communication"
+        },
+        {
+            "id": 8,
+            "name": "Discipline"
+        }
+    ],
+    "kpi_reviews": [
+        {
+            "id": 1,
+            "kpi": {
+                "id": 1,
+                "name": "Productivity"
+            },
+            "userId": 1,
+            "rating": 3,
+            "review": "Has made frequent errors that are harmful to business operations.The supervisor/department head has received numerous complaints about the quality of work.The quality of work produced is unacceptable.Does not complete required paperwork."
+        },
+        {
+            "id": 1,
+            "kpi": {
+                "id": 2,
+                "name": "Quality"
+            },
+            "userId": 1,
+            "rating": 3,
+            "review": "Performance consistently met expectations in all essential areas of responsibility, at times possibly exceeding expectations, and the quality of work overall was very good. The most critical annual goals were met."
+        },
+        {
+            "id": 2,
+            "kpi": {
+                "id": 3,
+                "name": "Job Knowledge and Skills"
+            },
+            "userId": 2,
+            "rating": 2,
+            "review": "Does not stock one's work; prioritizes and schedules own tasks and delivers quality work without missing deadlines.Gets to work early in order to set the day's agenda; is always punctual and tries all one can to avoid being late.Stays late if it makes a difference in the success of a project one is working on or tasks one is accomplishing"
+        },
+        {
+            "id": 3,
+            "kpi": {
+                "id": 4,
+                "name": "Problem Solving"
+            },
+            "userId": 1,
+            "rating": 5,
+            "review": "Actively listens when others are talking and seek clarification on issues not well understood.Seeks to brainstorm on problems to try to find the right solutions.Evaluates all possible solutions and chooses the one that will deliver the best results."
+        },
+        {
+            "id": 4,
+            "kpi": {
+                "id": 5,
+                "name": "Team Work"
+            },
+            "userId": 2,
+            "rating": 4,
+            "review": "Listens carefully to what others are saying without interrupting them.Always questions what the team is doing to try to ensure that everyone is benefiting.Respects the ideas and opinions that the other team members have to say."
+        },
+        {
+            "id": 5,
+            "kpi": {
+                "id": 6,
+                "name": "Entreprnurship and Inititative"
+            },
+            "userId": 3,
+            "rating": 2,
+            "review": "Always full of determination and starts with setting clear goals.Never afraid to take risks and is fully devoted to making everything work.Demonstrates high level of confidence when executing ideas and gets the job done even under stressful conditions."
+        },
+        {
+            "id": 6,
+            "kpi": {
+                "id": 7,
+                "name": "Communication"
+            },
+            "userId": 3,
+            "rating": 1,
+            "review": "Reports, forms, memos and correspondence are often completed late or not at all.Uses a condescending tone when talking to others in the office."
+        },
+        {
+            "id": 7,
+            "kpi": {
+                "id": 6,
+                "name": "Entreprnurship and Inititative"
+            },
+            "userId": 2,
+            "rating": 1,
+            "review": "Always a step ahead of competitors and always craves to learn more.Views failure as part of the game and takes failure as a learning experience to realize success.Possesses exceptional ability to adapt and thrive in any environment"
+        },
+        {
+            "id": 8,
+            "kpi": {
+                "id": 8,
+                "name": "Discipline"
+            },
+            "userId": 1,
+            "rating": 3,
+            "review": "Recognizes the moments when one gets the urge to act impulsively in order to be more equipped to create a delay between the action and the urge.Uses momentary distractions to replace the behavior one wants to control actively."
+        }
+    ],
+    "HR-Summary": [
+        {
+            "TotalEmployee": "200",
+            "NoReview": "190",
+            "Done": "150",
+            "NotDone": "40"
+        }
+    ],
+    "Team": [
+        {
+            "id": "0",
+            "TotalEmployee": "25",
+            " NoReview ": "25",
+            "Done": "15",
+            "NotDone": "10"
+        },
+        {
+            "id": "1",
+            "TotalEmployee": "20",
+            " NoReview ": "20",
+            "Done": "15",
+            "NotDone": "5"
+        },
+        {
+            "id": "2",
+            "TotalEmployee": "23",
+            " NoReview ": "20",
+            "Done": "10",
+            "NotDone": "10"
+        },
+        {
+            "id": "3",
+            "TotalEmployee": "35",
+            " NoReview ": "33",
+            "Done": "30",
+            "NotDone": "3"
+        },
+        {
+            "id": "4",
+            "TotalEmployee": "15",
+            "NoReview ": "190",
+            "Done": "15",
+            "NotDone": "0"
+        },
+        {
+            "id": "5",
+            "TotalEmployee": "20",
+            " NoReview ": "20",
+            "Done": "15",
+            "NotDone": "5"
+        }
+    ]
+}
