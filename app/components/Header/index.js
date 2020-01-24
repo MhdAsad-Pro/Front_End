@@ -5,7 +5,7 @@ import './header.css'
 function Header() {
   return (
     <>
-      <Navbar className='my-nav'>
+      <Navbar className='my-nav fixed-top'>
         <Navbar.Brand href="#home" className='text-white'>
           <span>Opion_cue</span>
         </Navbar.Brand>
@@ -18,7 +18,6 @@ function Header() {
             <NavDropdown.Item href="#">
             <i class="fa fa-cog" aria-hidden="true" style={{fontSize:'20px'}}></i>Setting
             </NavDropdown.Item>
-            
             <NavDropdown.Item href="#"><i class="fa fa-sign-out" aria-hidden="true" style={{fontSize:'20px'}}></i>
               Logout
             </NavDropdown.Item>

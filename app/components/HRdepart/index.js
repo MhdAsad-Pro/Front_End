@@ -9,7 +9,6 @@ function HRdepart() {
     let value = e.target.value;
     setCurrentDepart(value);
   }
-
   return (
     <div className="">
       <div className="Team">
@@ -24,7 +23,7 @@ function HRdepart() {
           </Form.Control>
         </div>
       </div>
-      <h6 className='Heading1'>{currentDepart}</h6>
+     {/* <h6 className='Heading1'>{currentDepart}</h6>*/}  
     </div>
 
   );

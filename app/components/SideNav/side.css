@@ -1,18 +1,20 @@
 .sidenav---sidenav---_2tBP {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 1006;
     min-width: 70px;
-    background: rgb(89, 130, 206);
+    background: #0b3658;
     -webkit-transition: min-width 0.2s;
     -moz-transition: min-width 0.2s;
     -o-transition: min-width 0.2s;
     -ms-transition: min-width 0.2s;
     transition: min-width 0.2s;
     line-height: 10px;
+    
 }
+
 .logo-image{
     width: 66px;
     height: 66px;
@@ -21,4 +23,7 @@
     margin-top: -2px;
     align-items: center;
     padding-bottom: 50px;
+}
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > * {
+    color: white;
 }

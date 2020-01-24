@@ -8,10 +8,7 @@ function ManagerCard() {
       <Col>
     
         <Card>
-          <Card.Header>
-            <h4></h4>
-          </Card.Header>
-          <Card.Body>
+         <Card.Body>
             <Table>       
               <thead>
                <th>Name</th>

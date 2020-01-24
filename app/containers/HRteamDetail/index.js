@@ -17,25 +17,21 @@ export default function HRteamDetail() {
     setHRTeamSummary(data);
   }
   return (
+    <div className='container'> 
     <div className=''>
-      <HRteam />
-      <div className='row'>
-        {(ele => (
-          <div className='col-md-6'>
+      <HRteam/>
+          <div className='team ' style={{paddingRight:'100px', paddingLeft:'100px'}}>
             <TeamCard
-              TotalEmployee={ele.TotalEmployee}
-              NoReview={ele.NoReview}
-              Done={ele.Done}
-              NotDone={ele.NotDone}
+              TotalEmployee={HRTeamSummary.TotalEmployee}
+              NoReview={HRTeamSummary.NoReview}
+              Done={HRTeamSummary.Done}
+              NotDone={HRTeamSummary.NotDone}
             />
           </div>
-        ))}
-        <div className='col-md-6 graph'>
-          <Link to="/team-emp" className="btn btn-primary py-02"> View Total Employee</Link>
+          <div className='view'>
+          <Link to="/depart-emp" className='btn btn-primary' style={{float:'right', marginTop:'10px', marginRight:'100px'}}>View Employee List</Link>
         </div>
       </div>
-    </div>
-
-
+      </div>
   );
 }

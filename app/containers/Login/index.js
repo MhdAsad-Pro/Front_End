@@ -40,7 +40,7 @@ export default function Login(props) {
   
                     <div class="form-group">
 
-                      <Link href='/dashboard' class="btn btn-info " type="submit" value="Login"> Login</Link>
+                      <Link to='/dashboard' class="btn btn-info " type="submit" value="Login"> Login</Link>
                     </div>
                     <label class="pull-left checkbox-inline"><input type="checkbox" /> Remember me</label>
 

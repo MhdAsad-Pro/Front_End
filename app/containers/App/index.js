@@ -12,10 +12,10 @@ import BasePage from '../BasePage';
 import Login from '../Login';
 import DashBoard from '../DashBoard';
 import DetailPage from '../DetailPage';
-import HRmainDashBoard from '../HR-DashBoard';
-import HRdepartDetail from '../DepartDetail';
+import HRdashBoard from '../HR-DashBoard'
+//import HRdepartDetail from '../DepartDetail';
 import AddEmployee from '../AddEmployee';
-import HRdashBoard from '../HR-DepartMain';
+import HRDepartMain from '../HR-DepartMain';
 import HRteamDetail from '../HRteamDetail';
 import ManagerDashBoard from '../ManagerEmpList';
 import WidgetCell from '../WidgetCell';
@@ -25,22 +25,22 @@ import ForgetPassword from '../ForgetPassWord';
 import Review from '../ReviewForm';
 import KPIList from '../KPIListPage'
 import User from '../UserProfile';
-import ManagerMain from'../ManagerDashBoard';
+import ManagerMain from '../ManagerDashBoard';
 import TeamEmployeeList from '../TeamEmployee';
 import DepartEmployeeList from '../DepartEmployee';
 import ManagerTrackSystem from '../ManagerTrack';
 import KPIListPage from '../KPIListPage';
-import SideBar from '../../components/SideNav';
- 
+import HRBoard from '../HRDashBoard';
+
 export default function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <Login/>
+          <Login />
         </Route>
         <Route exact path="/forget">
-          <ForgetPassword/>
+          <ForgetPassword />
         </Route>
 
         <Route path="/dashboard">
@@ -54,17 +54,7 @@ export default function App() {
           </BasePage>
         </Route>
         {/** HR ROUTES START*/}
-        <Route path="/hr-dashboard">
-          <BasePage>
-            <HRmainDashBoard />
-          </BasePage>
-        </Route>
-        <Route path="/hr-depart">
-          <BasePage>
-            <HRdepartDetail />
-          </BasePage>
-        </Route>
-
+       
         <Route path="/hr-team">
           <BasePage>
             <HRteamDetail />
@@ -73,14 +63,57 @@ export default function App() {
 
         <Route path="/depart-main">
           <BasePage>
-            <HRdashBoard />
+            <HRDepartMain />
           </BasePage>
         </Route>
-        {/* Manger Route */}
+        {/* Team Employee List Form Route */}
+
+        <Route path="/team-emp">
+          <BasePage>
+            <TeamEmployeeList />
+          </BasePage>
+        </Route>
+        {/* Team Employee List Form Route */}
+
+        <Route path="/depart-emp">
+          <BasePage>
+            <DepartEmployeeList />
+          </BasePage>
+        </Route>
+
+        {/*HR Main dashboard Form Route */}
+
+        <Route path='/hrdashboard'>
+          <BasePage>
+            < HRBoard />
+          </BasePage>
+
+        </Route>
+
+        <Route path='/hr-dashboard'>
+          <BasePage>
+          <HRdashBoard />
+          </BasePage>
+        </Route>
+        {/*  Routes for Manger */}
 
         <Route path="/manager">
           <BasePage>
             <ManagerDashBoard />
+          </BasePage>
+        </Route>
+         {/* Manager Dashboard Form Route */}
+
+         <Route path="/manager-dashboard">
+          <BasePage>
+            <ManagerMain />
+          </BasePage>
+        </Route>
+        {/* Manager tracking s List Form Route */}
+
+        <Route path="/track">
+          <BasePage>
+            <ManagerTrackSystem />
           </BasePage>
         </Route>
 
@@ -98,91 +131,51 @@ export default function App() {
             <Message />
           </BasePage>
         </Route>
-         {/* generate Message Route */}
+        {/* generate Message Route */}
 
-         <Route path="/add">
+        <Route path="/add">
           <BasePage>
-            <AddEmployee/>
+            <AddEmployee />
           </BasePage>
         </Route>
-  {/* User Profile */}
+        {/* User Profile */}
 
- <Route path="/profile">
+        <Route path="/profile">
           <BasePage>
-            <User/>
+            <User />
           </BasePage>
         </Route>
- 
 
-         {/* Widget Route */}
 
-         <Route path="/widget">
+        {/* Widget Route */}
+
+        <Route path="/widget">
           <BasePage>
-            <WidgetCell/>
+            <WidgetCell />
           </BasePage>
         </Route>
-         {/* Review Form Route */}
+        {/* Review Form Route */}
 
-         <Route path="/form">
+        <Route path="/form">
           <BasePage>
-            <Review/>
+            <Review />
           </BasePage>
         </Route>
         {/* KPI List Form Route */}
 
         <Route path="/kpilist">
           <BasePage>
-            <KPIList/>
+            <KPIList />
           </BasePage>
         </Route>
-          {/* Manager Dashboard Form Route */}
+        {/*kpi List List Form Route */}
 
-          <Route path="/manager-dashboard">
+        <Route path="/kpi-list">
           <BasePage>
-            <ManagerMain/>
+            <KPIListPage />
           </BasePage>
         </Route>
-         {/* Team Employee List Form Route */}
-
-         <Route path="/team-emp">
-          <BasePage>
-            <TeamEmployeeList/>
-          </BasePage>
-        </Route>
- {/* Team Employee List Form Route */}
-
- <Route path="/depart-emp">
-          <BasePage>
-            <DepartEmployeeList/>
-          </BasePage>
-        </Route>
-        {/* Team Employee List Form Route */}
-
- <Route path="/track">
-          <BasePage>
-            <ManagerTrackSystem/>
-          </BasePage>
-        </Route>
-
- {/*kpi List List Form Route */}
-
- <Route path="/kpi-list">
-          <BasePage>
-            <KPIListPage/>
-          </BasePage>
-        </Route>
-
- {/*side Form Route */}
-
- <Route path="/side">
-          <BasePage>
-            <SideBar/>
-          </BasePage>
-        </Route>
-
-
-
-      </Switch>      
+      </Switch>
     </Router>
   );
 }

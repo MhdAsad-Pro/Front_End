@@ -4,11 +4,11 @@ import HRdepart from '../../components/HRdepart'
 import HRcards from '../../components/HRcards';
 import {fetchDepart} from '../../api'
 import {Link} from 'react-router-dom'
-export default function HRdashBoard() {
+export default function HRDepartMain() {
   const [HRDepartSummary, setHRDepartSummary] = useState([]);
 
   useEffect(() => {
-    fetchDepart(onHRDepartFetchSuccess);
+    fetchDepart(1,onHRDepartFetchSuccess);
   }, []);
 
   function onHRDepartFetchSuccess(data) {
@@ -18,21 +18,18 @@ export default function HRdashBoard() {
   return (
     <div>
       <HRdepart />
-      <div className='row'>
-      {HRDepartSummary.map(ele => (
-        <div className='col-md-6'>
+      <div className=''>
+    
           <HRcards
-           TotalEmployee={ele.TotalEmployee}
-           NoReview={ele.NoReview}
-           Done={ele.Done}
-           NotDone={eles.NotDone}
+           TotalEmployee={HRDepartSummary.TotalEmployee}
+           NoReview={HRDepartSummary.NoReview}
+           Done={HRDepartSummary.Done}
+           NotDone={HRDepartSummary.NotDone}
            />
         </div>
-      ))}
         <div className='view'>
-          <Link to="/depart-emp" className='btn btn-primary px-2'>View Employee List</Link>
+          <Link to="/depart-emp" className='btn btn-primary' style={{float:'right', marginTop:'10px', marginRight:'100px'}}>View Employee List</Link>
         </div>
       </div>
-    </div>
   );
 }

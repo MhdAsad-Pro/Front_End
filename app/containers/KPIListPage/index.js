@@ -3,9 +3,6 @@ import { Modal, Button } from 'react-bootstrap';
 import { useState,handleClose  } from 'react';
 //import Review from '../ReviewForm';
 import KpiForm from '../../components/KpiForm';
-
-
-
 export default function KPIListPage() {
   const [show, setShow] = useState(false);
 

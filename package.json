@@ -66,9 +66,10 @@
   "dependencies": {
     "@babel/polyfill": "7.4.3",
     "@fortawesome/react-fontawesome": "0.1.8",
-    "@trendmicro/react-sidenav": "^0.5.0",
     "@trendmicro/react-navs": "^0.11.6",
+    "@trendmicro/react-sidenav": "^0.5.0",
     "apexcharts": "^3.15.0",
+    "aws-amplify": "^2.2.2",
     "axios": "^0.19.1",
     "bootstrap": "4.4.1",
     "chalk": "^2.4.2",

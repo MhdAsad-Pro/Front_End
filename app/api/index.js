@@ -46,7 +46,7 @@ async function fetchHRTeam(id, onSuccess, onError) {
     onSuccess(jsonResponse);
   } catch (err) {
     // if some error occurs
-    console.log('some error');
+    console.log('some error',err);
   }
 }
 
@@ -57,7 +57,7 @@ export { fetchHRTeam };
 async function fetchDepart(id, onSuccess, onError) {
   try {
     const response = await fetch(
-      `https://my-json-server.typicode.com/H-del/dummy-database/HR-Department/${id}`,
+      `https://my-json-server.typicode.com/H-del/dummy-database/Depart/${id}`,
     );
     const jsonResponse = await response.json();
     onSuccess(jsonResponse);

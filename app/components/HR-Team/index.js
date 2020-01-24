@@ -12,7 +12,7 @@ function HRteam() {
   }
 
   return (
-    <div className="">
+    <div className="container">
       <div className="Team">
         <div className="col-12">
           <Form.Control as="select" onChange={changeHandeler}>
@@ -24,7 +24,7 @@ function HRteam() {
           </Form.Control>
         </div>
       </div>
-      <h6 className='Heading1'>{currentTeam}</h6>
+   {/* <h6 className='Heading1'>{currentTeam}</h6> */}  
     </div>
   );
 }
