@@ -23,21 +23,21 @@ export default function EmployeeList() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td>Hina</td>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>Not Done</td>
                             <td>Software</td>
                         </tr>
                         <tr>
-                            <td>2</td>
+                            <td>Hira</td>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>Not Done</td>
                             <td>FrontEnd</td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td>Mubshra</td>
                             <td>Larry the Bird</td>
                             <td>@twitter</td>
                             <td>Done</td>

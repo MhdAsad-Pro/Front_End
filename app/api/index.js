@@ -49,7 +49,6 @@ async function fetchHRTeam(id, onSuccess, onError) {
     console.log('some error',err);
   }
 }
-
 export { fetchHRTeam };
 
 
@@ -68,6 +67,21 @@ async function fetchDepart(id, onSuccess, onError) {
 }
 
 export { fetchDepart};
+
+// Add employee post API
+async function fetchAddEmployee(onSuccess,onError){
+  try{
+    const response= await fetch (
+      `https://jsonplaceholder.typicode.com/users/`
+    );
+    const jsonResponse = await response.json();
+    onSuccess(jsonResponse);
+  } 
+  catch(err){
+    console.log('some error')
+  }
+}
+export {fetchAddEmployee};
 
 
 
